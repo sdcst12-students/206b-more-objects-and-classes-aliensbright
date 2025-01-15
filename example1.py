@@ -23,13 +23,14 @@ class argExample:
         temp_area = temp_length * temp_width
         return temp_area
 
-    def __init__(self):
-        self.inputVals()
+    def __init__(self,a,b):
+        self.l = a
+        self.w = b
 
 
 if __name__ == "__main__":
     print("\n\n\n\n")
-    example = argExample()
+    example = argExample(3,5)
     
     multiple = 2
     print(f"The area for a rectangle that is \033[1;32;40m{multiple}\033[0;37;40m times larger in each dimension is \033[1;36;40m{example.multipleArea(multiple)}\033[0;37;40m")
